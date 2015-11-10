@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window=UIWindow(frame:UIScreen.mainScreen().bounds)
         
-        let vc=ViewController()
+        let vc=SettingsViewController()
         
         window?.rootViewController=vc
         
