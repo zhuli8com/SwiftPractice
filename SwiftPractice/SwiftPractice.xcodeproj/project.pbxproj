@@ -9,18 +9,14 @@
 /* Begin PBXBuildFile section */
 		ACD09BC31BF1D2F000192AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */; };
 		ACD09BC51BF1D2F000192AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BC41BF1D2F000192AF6 /* ViewController.swift */; };
-		ACD09BC81BF1D2F000192AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD09BC61BF1D2F000192AF6 /* Main.storyboard */; };
 		ACD09BCA1BF1D2F000192AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */; };
-		ACD09BCD1BF1D2F000192AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD09BCB1BF1D2F000192AF6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACD09BBF1BF1D2F000192AF6 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD09BC41BF1D2F000192AF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACD09BC71BF1D2F000192AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACD09BCC1BF1D2F000192AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD09BCE1BF1D2F000192AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,9 +52,7 @@
 			children = (
 				ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */,
 				ACD09BC41BF1D2F000192AF6 /* ViewController.swift */,
-				ACD09BC61BF1D2F000192AF6 /* Main.storyboard */,
 				ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */,
-				ACD09BCB1BF1D2F000192AF6 /* LaunchScreen.storyboard */,
 				ACD09BCE1BF1D2F000192AF6 /* Info.plist */,
 			);
 			path = SwiftPractice;
@@ -122,9 +116,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD09BCD1BF1D2F000192AF6 /* LaunchScreen.storyboard in Resources */,
 				ACD09BCA1BF1D2F000192AF6 /* Assets.xcassets in Resources */,
-				ACD09BC81BF1D2F000192AF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,25 +133,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ACD09BC61BF1D2F000192AF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACD09BC71BF1D2F000192AF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ACD09BCB1BF1D2F000192AF6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACD09BCC1BF1D2F000192AF6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACD09BCF1BF1D2F000192AF6 /* Debug */ = {
@@ -247,7 +220,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuli8.SwiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,7 +233,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuli8.SwiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
