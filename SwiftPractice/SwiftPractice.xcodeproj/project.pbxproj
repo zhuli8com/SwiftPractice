@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		ACD09BC31BF1D2F000192AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */; };
-		ACD09BC51BF1D2F000192AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BC41BF1D2F000192AF6 /* ViewController.swift */; };
 		ACD09BCA1BF1D2F000192AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */; };
 		ACD09BDA1BF1DB3300192AF6 /* SwitchWithTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BD81BF1DB3300192AF6 /* SwitchWithTextTableViewCell.swift */; };
 		ACD09BDB1BF1DB3300192AF6 /* SwitchWithTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD09BD91BF1DB3300192AF6 /* SwitchWithTextTableViewCell.xib */; };
 		ACD09BDD1BF1E7FD00192AF6 /* MinionModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BDC1BF1E7FD00192AF6 /* MinionModeViewModel.swift */; };
 		ACD09BDF1BF1E8F200192AF6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BDE1BF1E8F200192AF6 /* SettingsViewController.swift */; };
+		ACD09BE41BF307ED00192AF6 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BE21BF307ED00192AF6 /* NetworkViewController.swift */; };
+		ACD09BE71BF3159500192AF6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BE61BF3159500192AF6 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACD09BBF1BF1D2F000192AF6 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACD09BC41BF1D2F000192AF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD09BCE1BF1D2F000192AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD09BD81BF1DB3300192AF6 /* SwitchWithTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchWithTextTableViewCell.swift; sourceTree = "<group>"; };
 		ACD09BD91BF1DB3300192AF6 /* SwitchWithTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchWithTextTableViewCell.xib; sourceTree = "<group>"; };
 		ACD09BDC1BF1E7FD00192AF6 /* MinionModeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinionModeViewModel.swift; sourceTree = "<group>"; };
 		ACD09BDE1BF1E8F200192AF6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		ACD09BE21BF307ED00192AF6 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		ACD09BE61BF3159500192AF6 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		ACD09BC11BF1D2F000192AF6 /* SwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				ACD09BE11BF307C400192AF6 /* Network */,
 				ACD09BD41BF1DAE000192AF6 /* MVVM */,
 				ACD09BC21BF1D2F000192AF6 /* AppDelegate.swift */,
-				ACD09BC41BF1D2F000192AF6 /* ViewController.swift */,
 				ACD09BC91BF1D2F000192AF6 /* Assets.xcassets */,
 				ACD09BCE1BF1D2F000192AF6 /* Info.plist */,
 			);
@@ -100,6 +102,15 @@
 				ACD09BDC1BF1E7FD00192AF6 /* MinionModeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACD09BE11BF307C400192AF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ACD09BE21BF307ED00192AF6 /* NetworkViewController.swift */,
+				ACD09BE61BF3159500192AF6 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD09BC51BF1D2F000192AF6 /* ViewController.swift in Sources */,
+				ACD09BE41BF307ED00192AF6 /* NetworkViewController.swift in Sources */,
 				ACD09BDA1BF1DB3300192AF6 /* SwitchWithTextTableViewCell.swift in Sources */,
+				ACD09BE71BF3159500192AF6 /* Network.swift in Sources */,
 				ACD09BC31BF1D2F000192AF6 /* AppDelegate.swift in Sources */,
 				ACD09BDF1BF1E8F200192AF6 /* SettingsViewController.swift in Sources */,
 				ACD09BDD1BF1E7FD00192AF6 /* MinionModeViewModel.swift in Sources */,
