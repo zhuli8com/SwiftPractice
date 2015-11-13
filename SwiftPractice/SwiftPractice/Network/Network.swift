@@ -9,6 +9,17 @@
 
 import Foundation
 
+extension Network:CustomStringConvertible, CustomDebugStringConvertible {
+    //
+    var description:String{
+        return "Network遵循CustomStringConvertible"
+    }
+    
+    var debugDescription:String{
+        return "Network遵循CustomDebugStringConvertible"
+    }
+}
+
 class Network {
     static func request(method:String, url:String, params:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>(), callback:(data:NSData?,response:NSURLResponse?,error:NSError?) -> Void){
         let session=NSURLSession.sharedSession()
